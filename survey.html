@@ -26,6 +26,58 @@
             <form id="survey-form" action="#" method="post">
              
               <div class="form-header">
+                <h1>Please Enter Your Information Here</h1>
+              </div>
+
+              <!---------------------------------->
+              <!--FIRST FORM FIELDSET BEGINS  HERE-->
+              <!---------------------------------->
+                <fieldset class="form-fields">
+                    <label for="name">Name:</label>
+                  <input id="first-name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  <div class="form-hint">
+                    <p>Please enter characters only</p>
+                  </div>
+            
+                    <label for="email">Email:</label>
+                  <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                  <div class="form-hint">
+                    <p>Please enter characters only</p>
+                  </div>
+             
+                   <label for="phone-number">Phone:</label>
+                  <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  <div class="form-hint">
+                    <p>Please enter characters only</p>
+                  </div>
+           
+
+                  <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                  <div class="form-hint">
+                    <p>Please enter characters only</p>
+                  </div>
+    
+
+                  <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  <div class="form-hint">
+                    <p>Please enter characters only</p>
+                  </div>
+           
+
+                
+                  <button name="submit" id="submit-button" type="submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+
+
+  <!---------------------------------->
+  <!--FIRST FORM FIELDSET ENDS  HERE-->
+  <!---------------------------------->
+
+
+  <!---------------------------------->
+  <!--SECOND FORM FIELDSET STARTS  HERE-->
+  <!---------------------------------->
+              <div class="form-header">
                 <h1>Please Fill out the survery below</h1>
               </div>
                 <fieldset class="form-fields">
@@ -34,41 +86,39 @@
                   <div class="form-hint">
                     <p>Please enter characters only</p>
                   </div>
-                </fieldset>
+              
 
-                <fieldset class="form-fields">
+                
                     <label for="email">Email:</label>
                   <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
                   <div class="form-hint">
                     <p>Please enter characters only</p>
                   </div>
-                </fieldset>
+             
 
-                <fieldset class="form-fields">
                     <label for="phone-number">Phone:</label>
                   <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
                   <div class="form-hint">
                     <p>Please enter characters only</p>
                   </div>
-                </fieldset>
+           
 
-                <fieldset class="form-fields">
                   <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
                   <div class="form-hint">
                     <p>Please enter characters only</p>
                   </div>
-                </fieldset>
+    
 
-                <fieldset class="form-fields">
                   <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
                   <div class="form-hint">
                     <p>Please enter characters only</p>
                   </div>
-                </fieldset>
+ 
+              </fieldset>
 
-                <fieldset class="form-submit">
-                  <button name="submit" id="submit-btn" type="submit" data-submit="...Sending">Submit</button>
-                </fieldset>
+
+
+              
                 <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
               </form>
 
