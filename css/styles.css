@@ -3,6 +3,7 @@ html{
   background-color: #4CAF50;
   font-family: poppins;
 }
+
 /*******************/
     /*CSS GRID*/
 /*******************/
@@ -27,7 +28,7 @@ html{
   
 }
 #main-content{
-  display:grid;
+   display:grid;
     grid-row: 2/3;
     background-color: #fff;
     border: solid white 2px;
@@ -45,6 +46,9 @@ html{
 #phone-number{
   grid-column: 1/2;
 }
+#sulley-address{
+  grid-column: 1/2;
+}
 .form-fields{
   display: grid;
   grid-gap: 10px;
@@ -52,7 +56,10 @@ html{
   border-radius: 10px;
   
 }
-
+.survey-questions{
+  height: 500px;
+  border-radius: 10px;
+}
 
 .form-submit{
   display: grid;
@@ -72,8 +79,6 @@ html{
     grid-column: 1/4;
     grid-row: 3/4;
 }
-
-
 
 
 /*
