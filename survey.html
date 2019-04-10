@@ -33,36 +33,54 @@
         <!--FIRST FORM FIELDSET BEGINS  HERE-->
         <!---------------------------------->
         <fieldset class="form-fields">
-          <label for="name">Name:</label>
-          <input id="first-name" placeholder="Your name" type="text" tabindex="1" required autofocus>
-          <div class="form-hint">
-            <p>Please enter characters only</p>
-          </div>
 
+          <div class="field-wrapper"> 
+          <div class="input-wrapper">
+          <label for="name">Name:</label>
+          <input id="first-name" placeholder="Your name" type="text" tabindex="1" required >
+          </div>
+          <div id="name-hint" class="form-hint">
+            <p class="form-text">Please enter characters only</p>
+          </div>
+        </div>
+
+
+        <div class="field-wrapper"> 
+          <div class="input-wrapper"> 
           <label for="email">Email:</label>
           <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-          <div class="form-hint">
-            <p>Please enter characters only</p>
           </div>
+          <div id="email-hint" class="form-hint">
+            <p class="form-text">Please enter characters only</p>
+          </div>
+        </div>
 
+          <div class="field-wrapper"> 
+          <div class="input-wrapper">
           <label for="phone-number">Phone:</label>
           <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-          <div class="form-hint">
-            <p>Please enter characters only</p>
           </div>
+          <div id="phone-hint" class="form-hint">
+            <p class="form-text">Please enter characters only</p>
+          </div>
+        </div>
 
+          <div class="field-wrapper">
+
+          <div class="input-wrapper">
           <label for="sulley-address">Sulley Address</label>
           <input id="sulley-address" placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-          <div class="form-hint">
-            <p>Please enter characters only</p>
           </div>
 
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-          <div class="form-hint">
-            <p>Please enter characters only</p>
+          <div id="sulley-hint" class="form-hint">
+            <p class="form-text">Please enter characters only</p>
           </div>
+        </div>
 
-          <button name="submit" id="submit-button" type="submit" data-submit="...Sending">Submit</button>
+
+     
+
+         
         </fieldset>
 
 
@@ -84,26 +102,46 @@
             Have you ever played baseball before?
           </p>
           <div class="baseball">
-            <input type="radio" class="set-1" name="drone" value="Yes" checked>
-            <label for="question1">Yes</label>
-            <input type="radio" class="set-1" name="drone" value="No" >
-            <label for="question2">No</label>
+            <input id="q1opt1 " type="radio" class="set-1" name="q1" value="Yes">
+            <label for="q1opt1">Yes</label>
+            <input id="q1opt2" type="radio" class="set-1" name="q1" value="No" >
+            <label for="q1opt2">No</label>
           </div>
 
           <p id="question2">
             Would you Consider playing baseball in college?
           </p>
           <div class="college">
-            <input type="radio" class="set-2" name="drone" value="Yes" checked>
+            <input type="radio" class="set-2" name="q2" value="Yes" >
             <label for="question1">Yes</label>
-            <input type="radio" class="set-2" name="drone" value="No" >
+            <input type="radio" class="set-2" name="q2" value="No" >
             <label for="question2">No</label>
           </div>
 
+          <p id="question3">
+            Would you Consider playing baseball in college?
+          </p>
+          <div class="college">
+            <input type="radio" class="set-2" name="q3" value="Yes" >
+            <label for="question1">Yes</label>
+            <input type="radio" class="set-2" name="q3" value="No" >
+            <label for="question2">No</label>
+          </div>
+
+          <p id="question4">
+            Would you Consider playing baseball in college?
+          </p>
+          <div class="college">
+            <input type="radio" class="set-2" name="q4" value="Yes" >
+            <label for="question1">Yes</label>
+            <input type="radio" class="set-2" name="q4" value="No" >
+            <label for="question2">No</label>
+          </div>
+          <button name="submit" id="submit-button" type="submit" data-submit="...Sending">Submit</button>
         </fieldset>
 
 
-        <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a>
+        <p class="copyright">Designed by <a href="https://github.com/tylersullivan21/" target="_blank" title="Colorlib">Tyler Sullivan</a>
         </p>
       </form>
 

@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
  
     console.log("tied focus to our custom function");
  
+
+    var input_email = document.getElementById("email")
+    input_email.addEventListener("focus", )
     //more code
  
   })
@@ -15,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
     name_hint.style.visibility = "visible";
     console.log("focus is got!");
  
+}
+
+function showEmailHint(){
+    var email_hint = document.getElementById("")
 }
  
 
