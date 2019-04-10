@@ -226,3 +226,28 @@ fieldset {
   color: #888;
 }
 */
+
+
+.input-wrapper{
+  width: 50%;
+  margin: 0;
+  display: grid;
+}
+
+.field-wrapper{
+  display:flex;
+  margin-bottom: 5px;
+  justify-content:space-between;
+}
+
+ .form-text {
+  margin-top: 45px;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.form-hint{
+  visibility: hidden;
+}
