@@ -50,9 +50,9 @@ html{
   grid-column: 1/2;
 }
 .form-fields{
-  display: grid;
+  /*display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;*/
   border-radius: 10px;
   
 }
@@ -234,6 +234,7 @@ fieldset {
   width: 50%;
   margin: 0;
   display: grid;
+  height:70px;
 }
 
 .field-wrapper{
@@ -242,14 +243,39 @@ fieldset {
   justify-content:space-between;
 }
 
- .form-text {
-  margin-top: 45px;
+ .hint-text, .message-text{
+  margin-bottom: 0;
+
 }
 
 .copyright{
   text-align: center;
 }
 
-.form-hint{
-  visibility: hidden;
+.form-hint,.validation-msg{
+  display:none;
+}
+
+.form-feedback{
+  display:flex;
+  align-items: flex-end;
+}
+
+.form-hint, .validation-msg{
+
+  line-height: 2rem;
+  height:2rem;
+
+}
+
+.hint-text, .message-text{
+  margin:0;
+}
+
+.validation-msg.error{
+  color:red;
+}
+
+.validation-msg.valid{
+  color:green;
 }

@@ -34,122 +34,135 @@
         <!---------------------------------->
         <fieldset class="form-fields">
 
-          <div class="field-wrapper"> 
-          <div class="input-wrapper">
-          <label for="name">Name:</label>
-          <input id="first-name" placeholder="Your name" type="text" tabindex="1" required >
-          </div>
-          <div id="name-hint" class="form-hint">
-            <p class="form-text">Please enter characters only</p>
-          </div>
-        </div>
-
-
-        <div class="field-wrapper"> 
-          <div class="input-wrapper"> 
-          <label for="email">Email:</label>
-          <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-          </div>
-          <div id="email-hint" class="form-hint">
-            <p class="form-text">Please enter characters only</p>
-          </div>
-        </div>
-
-          <div class="field-wrapper"> 
-          <div class="input-wrapper">
-          <label for="phone-number">Phone:</label>
-          <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-          </div>
-          <div id="phone-hint" class="form-hint">
-            <p class="form-text">Please enter characters only</p>
-          </div>
-        </div>
-
           <div class="field-wrapper">
+            <div class="input-wrapper">
+              <label for="name">Name:</label>
+              <input id="first-name" placeholder="Your name" type="text" >
+            </div>
 
-          <div class="input-wrapper">
-          <label for="sulley-address">Sulley Address</label>
-          <input id="sulley-address" placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            <div class="form-feedback">
+              <div id="name-hint" class="form-hint">
+                <p class="hint-text">Please enter characters only</p>
+              </div>
+              <div id="name-message" class="validation-msg ">
+                <p class="message-text">You didn't enter a valid Name!</p>
+            </div>
           </div>
+    </div>
 
-          <div id="sulley-hint" class="form-hint">
-            <p class="form-text">Please enter characters only</p>
-          </div>
+
+    <div class="field-wrapper">
+      <div class="input-wrapper">
+        <label for="email">Email:</label>
+        <input id="email" placeholder="Your Email Address" type="email" >
+      </div>
+   
+      <div class="form-feedback">
+        <div id="email-hint" class="form-hint">
+          <p class="hint-text">Please enter a valid email</p>
         </div>
+        <div id="email-message" class="validation-msg ">
+          <p class="message-text"><img>You didn't enter a valid Email!</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="field-wrapper">
+      <div class="input-wrapper">
+        <label for="phone-number">Phone:</label>
+        <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel">
+      </div>
+      <div id="phone-hint" class="form-hint">
+        <p class="form-text">Please enter characters only</p>
+      </div>
+    </div>
+
+    <div class="field-wrapper">
+
+      <div class="input-wrapper">
+        <label for="sulley-address">Sulley Address</label>
+        <input id="sulley-address" placeholder="Your Web Site (optional)" type="url">
+      </div>
+
+      <div id="sulley-hint" class="form-hint">
+        <p class="form-text">Please enter characters only</p>
+      </div>
+    </div>
 
 
-     
-
-         
-        </fieldset>
 
 
-        <!---------------------------------->
-        <!--FIRST FORM FIELDSET ENDS  HERE-->
-        <!---------------------------------->
+
+    </fieldset>
 
 
-        <!---------------------------------->
-        <!--SECOND FORM FIELDSET STARTS  HERE
+    <!---------------------------------->
+    <!--FIRST FORM FIELDSET ENDS  HERE-->
+    <!---------------------------------->
+
+
+    <!---------------------------------->
+    <!--SECOND FORM FIELDSET STARTS  HERE
       BUILDING SURVEY QUESTIONS HERE-->
-        <!---------------------------------->
-        <div class="form-header">
-          <h1>Please Fill out the survery below</h1>
-        </div>
-        <fieldset class="survey-questions">
-          
-          <p id="question1">
-            Have you ever played baseball before?
-          </p>
-          <div class="baseball">
-            <input id="q1opt1 " type="radio" class="set-1" name="q1" value="Yes">
-            <label for="q1opt1">Yes</label>
-            <input id="q1opt2" type="radio" class="set-1" name="q1" value="No" >
-            <label for="q1opt2">No</label>
-          </div>
-
-          <p id="question2">
-            Would you Consider playing baseball in college?
-          </p>
-          <div class="college">
-            <input type="radio" class="set-2" name="q2" value="Yes" >
-            <label for="question1">Yes</label>
-            <input type="radio" class="set-2" name="q2" value="No" >
-            <label for="question2">No</label>
-          </div>
-
-          <p id="question3">
-            Would you Consider playing baseball in college?
-          </p>
-          <div class="college">
-            <input type="radio" class="set-2" name="q3" value="Yes" >
-            <label for="question1">Yes</label>
-            <input type="radio" class="set-2" name="q3" value="No" >
-            <label for="question2">No</label>
-          </div>
-
-          <p id="question4">
-            Would you Consider playing baseball in college?
-          </p>
-          <div class="college">
-            <input type="radio" class="set-2" name="q4" value="Yes" >
-            <label for="question1">Yes</label>
-            <input type="radio" class="set-2" name="q4" value="No" >
-            <label for="question2">No</label>
-          </div>
-          <button name="submit" id="submit-button" type="submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-
-
-        <p class="copyright">Designed by <a href="https://github.com/tylersullivan21/" target="_blank" title="Colorlib">Tyler Sullivan</a>
-        </p>
-      </form>
-
+    <!---------------------------------->
+    <div class="form-header">
+      <h1>Please Fill out the survery below</h1>
     </div>
+    <fieldset class="survey-questions">
 
-    <div id="footer">
+      <p id="question1">
+        Have you ever played baseball before?
+      </p>
+      <div class="baseball">
+        <input id="q1opt1 " type="radio" class="set-1" name="q1" value="Yes">
+        <label for="q1opt1">Yes</label>
+        <input id="q1opt2" type="radio" class="set-1" name="q1" value="No">
+        <label for="q1opt2">No</label>
+      </div>
 
-    </div>
+      <p id="question2">
+        Would you Consider playing baseball in college?
+      </p>
+      <div class="college">
+        <input type="radio" class="set-2" name="q2" value="Yes">
+        <label for="question1">Yes</label>
+        <input type="radio" class="set-2" name="q2" value="No">
+        <label for="question2">No</label>
+      </div>
+
+      <p id="question3">
+        Would you Consider playing baseball in college?
+      </p>
+      <div class="college">
+        <input type="radio" class="set-2" name="q3" value="Yes">
+        <label for="question1">Yes</label>
+        <input type="radio" class="set-2" name="q3" value="No">
+        <label for="question2">No</label>
+      </div>
+
+      <p id="question4">
+        Would you Consider playing baseball in college?
+      </p>
+      <div class="college">
+        <input type="radio" class="set-2" name="q4" value="Yes">
+        <label for="question1">Yes</label>
+        <input type="radio" class="set-2" name="q4" value="No">
+        <label for="question2">No</label>
+      </div>
+      <button name="submit" id="submit-button" type="submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+
+
+    <p class="copyright">Designed by <a href="https://github.com/tylersullivan21/" target="_blank"
+        title="Colorlib">Tyler Sullivan</a>
+    </p>
+    </form>
+
+  </div>
+
+  <div id="footer">
+
+  </div>
 
   </div>
 
