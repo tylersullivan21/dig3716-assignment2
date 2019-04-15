@@ -224,7 +224,7 @@ function validatePhone(){
     /* console.log("input has string value: "+name_input.value);
      console.log("input is of type:: "+ typeof(name_input.value));*/
  
-     var pattern = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
+     var pattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}/;
  
      /*validation fails*/
      if(phone_input.value == "" || pattern.test(phone_input.value) == false /*has characters that are not letters*/)
