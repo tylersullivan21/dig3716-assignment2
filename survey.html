@@ -15,11 +15,21 @@
   <div id="grid-container">
 
     <div id="header">
-
+<p>Welcome to the tyler sullivan quiz</p>
     </div>
 
     <div id="sidebar">
+<ol>
+  <li>
 
+  </li>
+  <li>
+
+  </li>
+  <li>
+    
+  </li>
+</ol>
     </div>
 
     <div id="main-content">
@@ -36,7 +46,7 @@
 
           <div class="field-wrapper">
             <div class="input-wrapper">
-              <label for="name">Name:</label>
+              <label for="name">First Name:</label>
               <input id="first-name" placeholder="Your name" type="text" >
             </div>
 
@@ -50,6 +60,22 @@
           </div>
     </div>
 
+    <div class="field-wrapper">
+      <div class="input-wrapper">
+        <label for="last-name">Last Name:</label>
+        <input id="last-name" placeholder="Your last name" type="text" >
+      </div>
+
+      <div class="form-feedback">
+        <div id="last-name-hint" class="form-hint">
+          <p class="hint-text">Please enter characters only</p>
+        </div>
+        <div id="last-name-message" class="validation-msg ">
+          <p class="message-text">You didn't enter a valid Name!</p>
+      </div>
+    </div>
+</div>
+
 
     <div class="field-wrapper">
       <div class="input-wrapper">
@@ -62,7 +88,7 @@
           <p class="hint-text">Please enter a valid email</p>
         </div>
         <div id="email-message" class="validation-msg ">
-          <p class="message-text"><img>You didn't enter a valid Email!</p>
+          <p class="message-text"><img>Enter in blah@blah.com format.</p>
       </div>
     </div>
     </div>
@@ -72,9 +98,14 @@
         <label for="phone-number">Phone:</label>
         <input id="phone-number" placeholder="Your Phone Number (optional)" type="tel">
       </div>
-      <div id="phone-hint" class="form-hint">
-        <p class="form-text">Please enter characters only</p>
+      <div class="form-feedback">
+        <div id="phone-number-hint" class="form-hint">
+          <p class="hint-text">Please enter characters only</p>
+        </div>
+        <div id="phone-number-message" class="validation-msg ">
+          <p class="message-text">You didn't enter a valid Name!</p>
       </div>
+    </div>
     </div>
 
     <div class="field-wrapper">
@@ -84,9 +115,14 @@
         <input id="sulley-address" placeholder="Your Web Site (optional)" type="url">
       </div>
 
-      <div id="sulley-hint" class="form-hint">
-        <p class="form-text">Please enter characters only</p>
+      <div class="form-feedback">
+        <div id="sulley-hint" class="form-hint">
+          <p class="hint-text">Please enter characters only</p>
+        </div>
+        <div id="sulley-message" class="validation-msg ">
+          <p class="message-text">You didn't enter a valid Name!</p>
       </div>
+    </div>
     </div>
 
 
@@ -160,8 +196,13 @@
 
   </div>
 
-  <div id="footer">
+  <div id="responses">
 
+
+  </div>
+
+  <div id="footer">
+    <p>Created By James Sullivan</p>
   </div>
 
   </div>
